@@ -5,52 +5,45 @@
   <header>
     <meta charset="UTF-8">
     <link href="styles.css" rel="stylesheet">
-    <title>Dr. Norman Borlaug</title>
+    <title>Charles Darwin</title>
   </header>
   <body>
     <main id="main">
-      <h1 id="title">Dr. Norman Borlaug</h1>
-      <p>The man who saved a billion lives</p>
+      <h1 id="title">Charles Darwin</h1>
+      <p>It is not the strongest of the species that survives, not the most intelligent that survives. It is the one that is the most adaptable to change.</p>
       <div id ="img-div">
-        <img id="image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" />
-        <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+        <img id="image" src="https://humanidades.com/wp-content/uploads/2017/04/charles-robert-darwin-e1492517037933.jpg" />
+        <figcaption id="img-caption">Charles Darwin</figcaption>
       </div>
-      <h2 id="tribute-info">Here's a time line of Dr. Borlaug's life:</h2>
+      <h2 id="tribute-info">Here's a time line of Darwin's life:</h2>
       <ul>
-        <li><span class="bold">1914</span> - Born in Cresco, Iowa</li>
-        <li><span class="bold">1933</span> - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li>
-        <li><span class="bold">1935</span> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li>
-        <li><span class="bold">1937</span> - Finishes university and takes a job in the US Forestry Service</li>
-        <li><span class="bold">1938</span> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</li>
-        <li><span class="bold">1941</span> - Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disinfectants, and other applied science.</li>
-        <li><span class="bold">1942</span> - Receives a Ph.D. in Genetics and Plant Pathology
+        <li><span class="bold">1809</span> - Born in Shropshire, England</li>
+        <li><span class="bold">1817</span> - Darwin starts school</li>
+        <li><span class="bold">1825</span> - Becomes a doctor's apprentice</li>
+        <li><span class="bold">1827</span> - Darwin reads his grandfather, Erasmus Darwin's journals which contain his ideas about evolutionary theory.</li>
+        <li><span class="bold">1828</span> - Darwin neglected his medical studies so his father sent him to the University of Cambridge to study theology.</li>
+        <li><span class="bold">27 December 1831</span> - Darwin’s uncle, Josiah Wedgwood II, convinced his father it was a good idea to allow Darwin to go on the voyage that would take five years to complete.</li>
+        <li><span class="bold">1837</span> - Darwin completes his notes about his time on the Beagle, now commonly known as The Voyage of the Beagle. It was published along with Captain Fitzroy's own notes in 1839.
 </li>
-        <li><span class="bold">1944</span> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.
+        <li><span class="bold">1839</span> - Darwin married his first cousin Emma after writing about the pros and cons of marriage in his notebook. Pros included having a "friend in old age ... better than a dog anyhow", but cons included that he would have "less money for books".
 </li>
-        <li><span class="bold">1945</span> - Discovers a way to grown wheat twice each season, doubling wheat yields
+        <li><span class="bold">1 July 1858
+</span> - Darwin's friend Charles Lyell read a paper by Alfred Russel Wallace and told Darwin to publish his ideas so he would get the recognition, however, Darwin did not see Wallace as a threat and the two scientists both had their work presented at the Linnean Society at the same time.
 </li>
-        <li><span class="bold">1953</span> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertilizer. It goes on to provide 95% of Mexico's wheat.
+        <li><span class="bold">22 November 1859
+</span> - On the Origin of Species is published.
 </li>
-        <li><span class="bold">1962</span> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population
-</li>
-        <li><span class="bold">1970</span> - receives the Nobel Peace Prize
-</li>
-        <li><span class="bold">1983</span> - helps seven African countries dramatically increase their maize and sorghum yields
-</li>
-        <li><span class="bold">1984</span> - becomes a distinguished professor at Texas A&M University
-</li>
-        <li><span class="bold">2005</span> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."
-</li>
-        <li>2009 - dies at the age of 95.
+        <li><span class="bold">19 April 1882
+</span> - Charles Darwin dies.
 </li>
       </ul>
       <br>
-      <p class="quote">"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."
+      <p class="quote">"Charles Darwin made arguably the greatest discovery any human has ever made. He was a man of great persistence. He wasn't probably a natural genius, he worked very hard - even though he was an invalid. He was a great family man, a very nice man. I think he was admirable in all sorts of ways."
 <br>
 <br>
--- Indian Prime Minister Manmohan Singh</p>
+-- Richard Dawkins</p>
 
-      <h3 id="tributelink">If you have time, you should read more about this incredible human being on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Wikipedia entry</a>.</h3>
+      <h3 id="tributelink">Information extracted from <a id="tribute-link" href="http://evolution.discoveringgalapagos.org.uk/evolution-zone/discovering-darwin/darwins-life/darwins-timeline/" target="_blank">Discovering Galapagos</a>.</h3>
     </main>
   </body>
 </html>
@@ -77,7 +70,7 @@ div {
 
 img {
   display: block;
-  margin: auto;
+  margin: 8px auto;
 }
 
 #image {
