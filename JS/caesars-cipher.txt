@@ -1,0 +1,23 @@
+function rot13(str) {
+  let source = str.split("");
+  console.log(source);
+  let regExNonAlph = /\W/i;
+  let alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  for (let i = 0; i < source.length;i++) {
+    if (regExNonAlph.test(source[i])) {
+
+    } else {
+       if (alph.indexOf(source[i]) < 13) {
+         console.log(alph[alph.indexOf(source[i])] + " <13");
+         source[i] = alph[alph.indexOf(source[i]) + 13];
+       } else {
+       console.log(alph[alph.indexOf(source[i])] + " >13");
+       source[i] = alph[alph.indexOf(source[i]) - 13]
+     }}
+  }
+  source = source.join("");
+  console.log(source);
+  return source;
+}
+
+rot13("SERR CVMMN!");

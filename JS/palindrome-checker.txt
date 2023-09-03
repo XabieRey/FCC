@@ -1,0 +1,22 @@
+function palindrome(str) {
+  let alphaNumRegEx = /[a-zA-Z0-9]*/ig;
+  // export alphanumerical characters to variable
+  let testStr = str
+                .match(alphaNumRegEx)
+  // delete spacing and turn to lower case
+  testStr = testStr
+            .join("")
+            .toLowerCase();
+  console.log(testStr + " is test string")
+  //compare each letter from the start with each letter from the end. If any pair is not equal, return false. If loop ends with no return, return true.
+  for (let i = 0; i < testStr.length; i++) {
+    console.log(testStr[i] + " is letter from start");
+    console.log(testStr[testStr.length - 1 - i] + " is letter from end");
+    if (testStr[i] != testStr[testStr.length - 1 - i]) {
+      return false
+    }
+  }
+  return true;
+}
+
+palindrome("_eye");

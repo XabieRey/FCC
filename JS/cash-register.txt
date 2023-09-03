@@ -1,0 +1,69 @@
+function checkCashRegister(price, cash, cid) {
+  
+//relation of item and value
+  let value = {
+    "PENNY": 0.01,
+    "NICKEL": 0.05,
+    "DIME": 0.1,
+    "QUARTER": 0.25,
+    "ONE": 1,
+    "FIVE": 5,
+    "TEN": 10,
+    "TWENTY": 20,
+    "ONE HUNDRED": 100
+  }
+
+//object to be returned
+  let change = {
+    status: "",
+    change: []
+  }
+  
+//total ammount to be given to custommer
+  let ret = cash-price;
+  
+//this checks each item and its value and finds if it is possible to give those given the ammount to be given
+  for (let i = 1; i <= Object.keys(value).length; i++) {
+    let currIndex = Object.keys(value).length-i;
+    let currItem = Object.keys(value)[currIndex];
+    let currVal = value[Object.keys(value)[Object.keys(value).length-i]];
+    let toGive = Math.floor(ret / currVal) * currVal;
+    let currCid = cid[currIndex][1];
+    console.log(currItem + " is current item");
+    console.log(currVal + " is current value");
+    console.log(toGive + " to give");
+    console.log(currCid + " is current cid")
+  
+//check if cid is enough and update money that is still due
+    if (currCid < toGive) {
+      if (currCid > 0) {change["change"].push([currItem, currCid])};
+      console.log(currCid + " given");
+      ret = (ret - currCid).toFixed(2);
+      console.log(ret + " is new ret")
+    } else if (currCid >= toGive) {
+      if (toGive > 0) {change["change"].push([currItem, toGive])};
+      console.log(toGive + " given");
+      ret = (ret - toGive).toFixed(2);
+      console.log(ret + " is new ret")
+    }
+  }
+
+
+  console.log(ret + " is final ret");
+  console.log((change['change']).toString());
+  console.log((cid.filter(val => val[1] != 0)).toString());
+   if (ret > 0) {
+     change['status'] = "INSUFFICIENT_FUNDS";
+     change['change'] = [];
+   } else if ((change['change']).toString() === (cid.filter(val => val[1] != 0)).toString()) {
+     change['status'] = "CLOSED";
+     change['change'] = cid
+   } else {
+     change['status'] = "OPEN";
+   }
+
+  console.log(change);
+  return change;
+}
+
+checkCashRegister(19.5, 20, [["PENNY", 0.5], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]])

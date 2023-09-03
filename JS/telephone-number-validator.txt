@@ -1,0 +1,11 @@
+function telephoneCheck(str) {
+  let regExNum = 
+  /^(1|)\s*((\(\d\d\d\))|(\d\d\d))((\s)|(-))*\d\d\d\W*\d\d\d\d$/;
+  console.log(regExNum.test(str));
+
+  if (regExNum.test(str)) {
+    return true
+  } else {return false};
+}
+
+telephoneCheck("1 555-555-5555");

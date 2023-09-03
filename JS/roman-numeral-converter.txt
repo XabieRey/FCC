@@ -1,0 +1,51 @@
+function convertToRoman(num) {
+  let str= num.toString();
+  let roman = [];
+  let charOne = ["I", "X", "C", "M"];
+  ;let charFive = ["V", "L", "D"]
+  function romConversion(num, indexFromEnd) {
+    let digit = "";
+ 
+    //check character set
+ 
+    let letterSet = "";
+      if (num < 4) {
+        letterSet = charOne[indexFromEnd];
+        console.log("character is " + letterSet);
+        roman.unshift(letterSet.repeat(num));
+      } else if (num == 4) {
+        letterSet = charOne[indexFromEnd].concat(charFive[indexFromEnd]);
+        console.log("character is " + letterSet);
+        roman.unshift(letterSet);
+      } else if (num < 9) {
+        letterSet = charFive[indexFromEnd].concat(charOne[indexFromEnd]
+        .repeat(num-5));
+        console.log("character is " + letterSet);
+        roman.unshift(letterSet)
+      } else if (num == 9) {
+        letterSet = charOne[indexFromEnd].concat(charOne[indexFromEnd+1]);
+        console.log("character is " + letterSet);
+        roman.unshift(letterSet)}
+ 
+    switch (num) {
+      case 1: digit = "I"
+      break;
+      case 2: digit = "II"
+      break;
+    }
+    roman.push(digit);
+  }
+  for (let i = 1; i <= str.length; i++) {
+    console.log(str[str.length - i] + " is current digit");
+    console.log(str.length - (str.length - i) - 1 + " is position from end")
+
+    romConversion(str[str.length - i], str.length - (str.length - i) - 1)
+
+    console.log(roman + " is new roman");
+ }
+ roman = roman.join("")
+ console.log(roman + " is final roman");
+ return roman;
+}
+
+convertToRoman(99);
